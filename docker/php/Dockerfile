@@ -22,7 +22,7 @@ RUN set -eux && \
   echo ${TZ} > /etc/timezone && \
   pecl install xdebug && \
   apk del .build-dependencies && \
-  docker-php-ext-install intl pdo_mysql mbstring zip bcmath && \
+  docker-php-ext-install intl pdo_mysql mbstring zip bcmath opcache && \
   docker-php-ext-enable xdebug && \
   mkdir $PSYSH_DIR && wget $PHP_MANUAL_URL -P $PSYSH_DIR
 

@@ -1,11 +1,7 @@
 import Vue from 'vue'
-// ルーティングの定義をインポートする
 import router from './app/router'
-
-// ルートコンポーネントをインポートする
-import App from './app/App.vue'
-
 import store from './app/store'
+import App from './app/App.vue'
 
 const createApp = async () => {
   await store.dispatch('auth/currentUser')

@@ -13,7 +13,6 @@
   <script src="{{ config('app.url') }}/js/app.js" defer></script>
 
   <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="{{ config('app.url') }}/css/admin.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 
 </head>
