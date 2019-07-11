@@ -39,17 +39,17 @@ services:
       - backend
 
   mysql:
-    image: mysql:latest
+    build:
+      context: ./docker/mysql
     ports:
       - "3306:3306"
     volumes:
-      - ./docker/mysql/mysql_conf/:/etc/mysql/conf.d:cached
       - ./docker/mysql/mysql_data:/var/lib/mysql:cached
+      - ./docker/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:cached
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_USER: test
       MYSQL_PASSWORD: test
-      TZ: "Asia/Tokyo"
     networks:
         - backend
 
@@ -83,7 +83,8 @@ services:
     ports:
       - 9001:9001
     volumes: 
-      - ./:/opt/workspace:cached
+      - ./:/work:cached
+    working_dir: /work
     networks:
       - frontend
       - backend
