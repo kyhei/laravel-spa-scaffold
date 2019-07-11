@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
     <div class="content">
-      <div class="title m-b-md">Laravel</div>
+      <div class="title">Laravel Scaffold</div>
+      <div class="sub-title">Template for Single Page Application</div>
     </div>
   </div>
 </template>
@@ -19,9 +20,6 @@ export default {
   position: relative;
 
   background-color: #fff;
-  color: #636b6f;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 200;
   height: 100vh;
   margin: 0;
 }
@@ -34,9 +32,16 @@ export default {
 
 .content {
   text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  color: #636b6f;
 }
 
 .title {
   font-size: 84px;
+}
+
+.sub-title {
+  font-size: 48px;
 }
 </style>

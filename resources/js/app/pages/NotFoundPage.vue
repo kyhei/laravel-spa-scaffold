@@ -23,6 +23,7 @@ export default {
 }
 
 .content {
+  font-family: 'Nunito', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;

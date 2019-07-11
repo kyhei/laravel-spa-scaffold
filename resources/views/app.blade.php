@@ -13,6 +13,7 @@
   <script src="{{ config('app.url') }}/js/app.js" defer></script>
 
   <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 
 </head>
